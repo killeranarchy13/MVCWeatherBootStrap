@@ -11,7 +11,7 @@ namespace MVCWeatherBootStrap.Controllers
         // GET: WeatherMain
         public ActionResult WeatherMainView()
         {
-            return PartialView();
+            return View();
         }
 
         public ActionResult TemperatureDetailsView()
