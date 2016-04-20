@@ -12,16 +12,17 @@
     <div id="content">
         <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
             <li class="active"><a href="#main" data-toggle="tab">Main</a></li>
-            <li><a href="#temperaturedetails" data-toggle="tab">Orange</a></li>
+            <li><a href="#temperaturedetails" data-toggle="tab">Temperature Details</a></li>
             <li><a href="#yellow" data-toggle="tab">Yellow</a></li>
             <li><a href="#green" data-toggle="tab">Green</a></li>
             <li><a href="#blue" data-toggle="tab">Blue</a></li>
         </ul>
         <div id="my-tab-content" class="tab-content">
             <div class="tab-pane active" id="main">
+                @{Html.RenderAction("WeatherMainView", "WeatherMain");}
             </div>
             <div class="tab-pane" id="temperaturedetails">
-                <h1>Temperature Details</h1>
+                @{Html.RenderAction("TemperatureDetailsView", "WeatherMain");}
             </div>
             <div class="tab-pane" id="yellow">
                 <h1>Yellow</h1>
